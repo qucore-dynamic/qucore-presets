@@ -1,0 +1,38 @@
+name: CI (Multi-Service Check)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint check
+        run: npm run lint
+
+      # - name: Generate Prisma Clients
+      #   run: npm run prisma:generate --workspaces --if-present
+
+      # - name: Build all services
+      #   run: npm run build --workspaces --if-present
+
+      # - name: Run all tests
+      #   run: npm run test --workspaces --if-present

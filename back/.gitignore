@@ -1,0 +1,6 @@
+# **/_EXAMPLES
+**/generated/prisma
+**/node_modules
+**/dist
+# **/logs
+# **/.env

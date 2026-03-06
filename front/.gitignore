@@ -1,0 +1,4 @@
+# **/_EXAMPLES
+**/node_modules
+**/next
+# **/.env
