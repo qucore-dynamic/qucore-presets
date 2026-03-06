@@ -25,13 +25,13 @@ If you are creating a new QuCore Dynamic module from scratch, use `degit` to dow
 
 ```bash
 # For a Backend module
-npx dev git artemzhr/qucore-presets/back qucore-module-name
+npx degit ArtemZhyto/qucore-presets/back qucore-module-name
 
 # For a Frontend module
-npx degit artemzhr/qucore-presets/front qucore-app-name
+npx degit ArtemZhyto/qucore-presets/front qucore-app-name
 
 # For a Fullstack module
-npx degit artemzhr/qucore-presets/full qucore-fullstack-name
+npx degit ArtemZhyto/qucore-presets/full qucore-fullstack-name
 ```
 
 ## Contributing
