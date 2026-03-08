@@ -29,11 +29,12 @@
     "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.7.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/jest": "^30.0.0",
-    "typescript": "^5",
-    "jest": "^30.2.0"
+    "autoprefixer": "^10.4.27",
+    "jest": "^30.2.0",
+    "typescript": "^5"
   }
 }

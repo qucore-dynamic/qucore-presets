@@ -1,5 +1,5 @@
 # **/_EXAMPLES
 **/node_modules
 **/package-lock.json
-**/next
+**/.next
 # **/.env
