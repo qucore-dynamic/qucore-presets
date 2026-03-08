@@ -12,7 +12,6 @@ import { siteConfig } from "@config/metadata"
  * - short_name
  * - description
  */
-
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.title.default,

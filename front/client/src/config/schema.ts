@@ -1,14 +1,10 @@
 // Modules
 import { siteConfig } from "./metadata"
 
-/**
- * Immutable JSON-LD template for QuCore Dynamic.
- * Change only: name, description and url (metadataBase).
- */
 export const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "QuCore Dynamic",
+  name: siteConfig.title,
   description: siteConfig.description,
   url: siteConfig.metadataBase.toString(),
   logo: {

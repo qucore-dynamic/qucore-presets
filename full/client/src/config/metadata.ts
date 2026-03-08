@@ -6,13 +6,11 @@ const baseUrl =
  *
  * Immutable structure: do NOT change the keys or nesting.
  * Change only these values for per-site customization:
- * - title.default / title.template
+ * - title
  * - description
  * - metadataBase (baseUrl)
  * - openGraph.title, openGraph.description, openGraph.siteName
  * - twitter.title, twitter.description, twitter.site
- *
- * Note: twitter.creator / author is fixed and must NOT be changed.
  */
 
 const title = "QuCore Dynamic"
