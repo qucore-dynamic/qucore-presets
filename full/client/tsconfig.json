@@ -30,6 +30,7 @@
       "@store/*": ["store/*"],
       "@types/*": ["types/*"],
       "@utils/*": ["utils/*"],
+      "@config/*": ["config/*"],
       "@/*": ["*"]
     }
   },
