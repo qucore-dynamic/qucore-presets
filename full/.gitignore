@@ -1,6 +1,7 @@
 # **/_EXAMPLES
 **/generated/prisma
 **/node_modules
+**/package-lock.json
 **/dist
 **/next
 # **/logs
