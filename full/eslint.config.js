@@ -1,12 +1,12 @@
 // Modules
-import eslint from "@eslint/js"
-import tseslint from "typescript-eslint"
-import reactPlugin from "eslint-plugin-react"
-import globals from "globals"
+import eslint from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import reactPlugin from 'eslint-plugin-react'
+import globals from 'globals'
 
 export default tseslint.config(
   {
-    ignores: ["**/next-env.d.ts", "**/.next/**", "**/node_modules/**", "**/dist/**"],
+    ignores: ['**/next-env.d.ts', '**/.next/**', '**/node_modules/**', '**/dist/**'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
@@ -49,7 +49,7 @@ export default tseslint.config(
       },
     },
     rules: {
-      [`quotes`]: [`error`, `backtick`],
+      [`quotes`]: [`error`, `single`, { allowTemplateLiterals: true }],
       [`semi`]: [`error`, `never`],
       [`@typescript-eslint/no-explicit-any`]: `error`,
       [`@typescript-eslint/no-unused-vars`]: `error`,

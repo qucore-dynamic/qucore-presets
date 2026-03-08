@@ -1,8 +1,8 @@
 // Modules
-import eslint from "@eslint/js"
-import tseslint from "typescript-eslint"
-import reactPlugin from "eslint-plugin-react"
-import globals from "globals"
+import eslint from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import reactPlugin from 'eslint-plugin-react'
+import globals from 'globals'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -25,7 +25,7 @@ export default tseslint.config(
       react: { version: `detect` },
     },
     rules: {
-      [`quotes`]: [`error`, `backtick`],
+      [`quotes`]: [`error`, `single`, { allowTemplateLiterals: true }],
       [`semi`]: [`error`, `never`],
       [`react/react-in-jsx-scope`]: `off`,
       [`react/prop-types`]: `off`,
