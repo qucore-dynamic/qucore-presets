@@ -28,7 +28,7 @@
       "@hooks/*": ["hooks/*"],
       "@services/*": ["services/*"],
       "@store/*": ["store/*"],
-      "@types/*": ["types/*"],
+      "@shared-types/*": ["types/*"],
       "@utils/*": ["utils/*"],
       "@config/*": ["config/*"],
       "@/*": ["*"]
