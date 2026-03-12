@@ -6,7 +6,7 @@ We're building a modular future. To keep the code elite, please follow these rul
 
 We use a very specific style. Our ESLint/Prettier will enforce it:
 
-- **Quotes**: Always use backticks (`'`). Single quotes are forbidden.
+- **Quotes**: Always use backticks (`'`). Double quotes are forbidden.
 - **Semicolons**: Never use them. Clean code only.
 - **Indentation**: 2 spaces (Soft tabs).
 - **New Line**: Every file must end with a single empty line.
@@ -19,13 +19,13 @@ To maintain readability, group your imports and separate them with clear comment
 
 ```typescript
 // Types
-import { IUserProfile, UserRole } from `./types/auth`
+import { IUserProfile, UserRole } from `@shared-types/auth`
 
 // Services
-import { AuthService } from `./services/auth.service`
+import { AuthService } from `@services/auth.service`
 
 // Utils
-import { logger } from `./utils/logger`
+import { logger } from `@utils/logger`
 ```
 
 ## Branching
@@ -38,9 +38,9 @@ import { logger } from `./utils/logger`
 
 Use **Conventional Commits**:
 
-- `feat(lgs): add shipment tracking`
-- `fix(ath): resolve token expiration`
-- `docs: update setup instructions`
+- `feat(lgs): added shipment tracking`
+- `fix(ath): resolved token expiration`
+- `docs: updated setup instructions`
 
 ## Pull Requests
 

@@ -19,13 +19,13 @@ To maintain readability, group your imports and separate them with clear comment
 
 ```typescript
 // Types
-import { IUserProfile, UserRole } from `./types/auth`
+import { IUserProfile, UserRole } from `@shared-types/auth`
 
 // Services
-import { AuthService } from `./services/auth.service`
+import { AuthService } from `@services/auth.service`
 
 // Utils
-import { logger } from `./utils/logger`
+import { logger } from `@utils/logger`
 ```
 
 ## Branching
@@ -38,9 +38,9 @@ import { logger } from `./utils/logger`
 
 Use **Conventional Commits**:
 
-- `feat(lgs): add shipment tracking`
-- `fix(ath): resolve token expiration`
-- `docs: update setup instructions`
+- `feat(lgs): added shipment tracking`
+- `fix(ath): resolved token expiration`
+- `docs: updated setup instructions`
 
 ## Pull Requests
 
