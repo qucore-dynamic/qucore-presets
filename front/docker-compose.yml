@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./front
+    env_file:
+      - .env
+    ports:
+      - '${PORT}:3000'
