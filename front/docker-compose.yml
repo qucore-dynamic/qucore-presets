@@ -1,9 +1,7 @@
-version: '3.9'
-
 services:
   frontend:
     build: .
     env_file:
       - .env
     ports:
-      - '<NEXT_PORT>:<NEXT_PORT>'
+      - '${PORT}:${PORT}'
