@@ -30,6 +30,11 @@ jobs:
 
       # - name: Build project
       #   run: npm run build
+      #   env:
+      #     AUTH_URL: ${{ secrets.AUTH_URL }}
+      #     NEXT_PUBLIC_SITE: ${{ secrets.NEXT_PUBLIC_SITE }}
+      #     PORT: ${{ secrets.PORT }}
+      #     MODE: 'prod'
 
-      # - name: Run tests
-      #   run: npm test
+      - name: Run tests
+        run: npm test -- --passWithNoTests
