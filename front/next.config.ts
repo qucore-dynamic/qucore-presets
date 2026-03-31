@@ -14,15 +14,6 @@ const nextConfig: NextConfig = {
     externalDir: true,
   },
 
-  async rewrites() {
-    return [
-      {
-        source: '/api/<SERVICE_NAME>/:path*',
-        destination: `${process.env.AUTH_API_URL}/:path*`,
-      },
-    ]
-  },
-
   images: {
     remotePatterns: [
       {
