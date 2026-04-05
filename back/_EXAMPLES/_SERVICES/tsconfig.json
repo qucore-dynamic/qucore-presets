@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
     "outDir": "dist",
-    "baseUrl": ".",
-    "target": "ES2022",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "noEmit": false,
     "strict": true,
     "resolveJsonModule": true,
@@ -13,19 +13,21 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["./node_modules/@types"],
+    "typeRoots": ["./node_modules/@types", "../../node_modules/@types"],
     "paths": {
-      "@controllers/*": ["src/controllers/*"],
-      "@mails/*": ["src/mails/*"],
-      "@middlewares/*": ["src/middlewares/*"],
-      "@models/*": ["src/models/*"],
-      "@routes/*": ["src/routes/*"],
-      "@services/*": ["src/services/*"],
-      "@sockets/*": ["src/sockets/*"],
-      "@ts/*": ["ts/*"],
-      "@libs/*": ["../../libs/*"]
-    }
+      "@controllers/*": ["./src/controllers/*"],
+      "@mails/*": ["./src/mails/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@models/*": ["./src/models/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@services/*": ["./src/services/*"],
+      "@sockets/*": ["./src/sockets/*"],
+      "@src/*": ["./src/*"],
+      "@ts/*": ["./ts/*"]
+    },
+    "types": ["node"]
   },
-  "include": ["src/**/*", "../../libs/**/*", "ts", "tests"],
+  "include": ["src/**/*", "ts/**/*", "tests/**/*", "prisma.config.ts"],
   "exclude": ["node_modules", "dist"]
 }

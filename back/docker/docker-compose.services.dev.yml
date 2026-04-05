@@ -7,7 +7,6 @@ services:
       - ../services/<SERVICE_NAME>/src:/app/services/<SERVICE_NAME>/src
       - ../services/<SERVICE_NAME>/package.json:/app/services/<SERVICE_NAME>/package.json
       - ../services/<SERVICE_NAME>/package-lock.json:/app/services/<SERVICE_NAME>/package-lock.json
-      - ../libs:/app/libs
     command: npm run dev # Use dev for hot-reloading during development
     ports:
       - '${SERVICE_PORT}:${SERVICE_PORT}'

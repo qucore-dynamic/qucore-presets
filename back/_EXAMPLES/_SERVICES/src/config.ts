@@ -1,11 +1,15 @@
 // Modules
-import dotenv from 'dotenv'
 import path from 'path'
-import { fileURLToPath } from 'url'
+import dotenv from 'dotenv'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+dotenv.config({ path: path.resolve(process.cwd(), '../../docker/.env') })
 
-dotenv.config({ path: path.resolve(__dirname, '../../../docker/.env') })
+const isProd = process.env.MODE === 'prod'
 
-export const __PORT = process.env.SERVICE_PORT
+export const __PORT = process.env.AUTH_SERVICE
+export const cookieOptions = {
+  httpOnly: true,
+  sameSite: (isProd ? 'strict' : 'lax') as 'strict' | 'lax',
+  secure: isProd,
+  ...(isProd && { domain: '.qucore.io' }),
+}
