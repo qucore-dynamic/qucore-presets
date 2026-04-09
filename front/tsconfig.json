@@ -18,21 +18,21 @@
         "name": "next"
       }
     ],
-    "baseUrl": "src",
+    "types": ["node", "jest"],
     "paths": {
-      "@app-components/*": ["app/components/*"],
-      "@components-ui/*": ["components/ui/*"],
-      "@components-widgets/*": ["components/widgets/*"],
-      "@components/*": ["components/*"],
-      "@features/*": ["features/*"],
-      "@hooks/*": ["hooks/*"],
-      "@services/*": ["services/*"],
-      "@store/*": ["store/*"],
-      "@shared-types/*": ["types/*"],
-      "@utils/*": ["utils/*"],
-      "@i18n/*": ["i18n/*"],
-      "@config/*": ["config/*"],
-      "@/*": ["*"]
+      "@app-components/*": ["./src/app/components/*"],
+      "@components-ui/*": ["./src/components/ui/*"],
+      "@components-widgets/*": ["./src/components/widgets/*"],
+      "@components/*": ["./src/components/*"],
+      "@features/*": ["./src/features/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@services/*": ["./src/services/*"],
+      "@store/*": ["./src/store/*"],
+      "@shared-types/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@config/*": ["./src/config/*"],
+      "@/*": ["./*"]
     }
   },
   "include": ["./next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.tsx"],
