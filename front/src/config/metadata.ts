@@ -1,5 +1,5 @@
 const baseUrl =
-  process.env.MODE === "prod" ? `https://${process.env.SITE}` : "http://localhost:3000"
+  process.env.MODE === 'prod' ? `https://${process.env.NEXT_PUBLIC_SITE}` : 'http://localhost:3000'
 
 /**
  * Central site configuration for QuCore Dynamic.
@@ -13,9 +13,9 @@ const baseUrl =
  * - twitter.title, twitter.description, twitter.site
  */
 
-const title = "QuCore Dynamic"
+const title = 'QuCore Dynamic'
 const description =
-  "Modular platform for managing and visualizing enterprise workflows, authentication, subscriptions, and inter-module communication with high reliability."
+  'Modular platform for managing and visualizing enterprise workflows, authentication, subscriptions, and inter-module communication with high reliability.'
 
 export const siteConfig = {
   title: {
@@ -29,7 +29,7 @@ export const siteConfig = {
     description: description,
     images: [
       {
-        url: "/icon-512.png",
+        url: '/icon-512.png',
         width: 512,
         height: 512,
         alt: `${title} logo`,
@@ -37,16 +37,16 @@ export const siteConfig = {
     ],
     url: new URL(baseUrl),
     siteName: title,
-    locale: "en_US",
-    type: "website",
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     title: title,
     description: description,
-    card: "summary_large_image",
-    images: ["/icon-512.png"],
+    card: 'summary_large_image',
+    images: ['/icon-512.png'],
     site: title,
-    creator: "Artem Zhytovoz",
+    creator: 'Artem Zhytovoz',
   },
   robots: {
     index: true,

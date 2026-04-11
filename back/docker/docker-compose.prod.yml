@@ -3,13 +3,14 @@ services:
     build:
       context: ../
       dockerfile: services/<SERVICE_NAME>/dockerfile
-    ports:
-      - '${SERVICE_PORT}:${SERVICE_PORT}'
     env_file:
       - .env
+      - .env.prod
+    ports:
+      - '${SERVICE_PORT}:${SERVICE_PORT}'
     networks: [app-network]
 
 networks:
   app-network:
     external: true
-    name: qucore_<MODULE>_network
+    name: qucore_<MODULE_NAME>_network

@@ -6,10 +6,11 @@ dotenv.config({ path: path.resolve(process.cwd(), '../../docker/.env') })
 
 const isProd = process.env.MODE === 'prod'
 
-export const __PORT = process.env.SERVICE_PORT
+export const __PORT = process.env.<SERVICE_NAME>
 export const cookieOptions = {
   httpOnly: true,
   sameSite: (isProd ? 'strict' : 'lax') as 'strict' | 'lax',
   secure: isProd,
-  ...(isProd && { domain: '.qucore.io' }),
+  ...(isProd && { domain: process.env.DOMAIN || '.qucore.io' }),
+  signed: true,
 }
