@@ -8,8 +8,8 @@ This repository contains the official development presets and architectural stan
 
 | Preset | Path | Purpose | License |
 | :--- | :--- | :--- | :--- |
-| **Backend Core** | `/back` | Isolated Node.js services and API modules. | GPL-3.0 |
-| **Frontend Core** | `/front` | Next.js interfaces for the ecosystem. | GPL-3.0 |
+| **Backend Core** | `/back` | Isolated Node.js services and API modules. | PolyForm-Noncommercial-1.0.0 |
+| **Frontend Core** | `/front` | Next.js interfaces for the ecosystem. | PolyForm-Noncommercial-1.0.0 |
 
 ## Technical Stack
 
@@ -109,7 +109,7 @@ We are building an open but strictly structured ecosystem:
 
 ## License & Authorship
 The **QuCore Dynamic** project and these presets are created and maintained by **Artem Zhytovoz**.
-Distributed under the **GNU GPL v3** license.
+Distributed under the **PolyForm Noncommercial 1.0.0** license.
 
 ---
 _Every line of code is a step toward global technological leverage._
