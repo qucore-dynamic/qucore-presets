@@ -2,7 +2,7 @@
 import '../global.css'
 
 // Font
-import { Prosto_One } from 'next/font/google'
+import { Prosto_One, Afacad, Coda } from 'next/font/google'
 
 // Modules
 import { NextIntlClientProvider } from 'next-intl'
@@ -17,6 +17,18 @@ const prosto = Prosto_One({
   display: 'swap',
 })
 
+const afacad = Afacad({
+  subsets: ['latin', 'cyrillic', 'latin-ext'],
+  weight: '400',
+  display: 'swap',
+})
+
+const coda = Coda({
+  subsets: ['latin', 'cyrillic', 'latin-ext'],
+  weight: '400',
+  display: 'swap',
+})
+
 const RootLayout = async ({ children, params }: LocalesLayoutT) => {
   const { locale } = await params
 
@@ -26,7 +38,7 @@ const RootLayout = async ({ children, params }: LocalesLayoutT) => {
 
   return (
     <html lang={locale}>
-      <body className={prosto.className}>
+      <body className={`${prosto.className} ${afacad.className} ${coda.className}`}>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>

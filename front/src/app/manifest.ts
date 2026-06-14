@@ -15,7 +15,7 @@ import { siteConfig } from '@config/metadata'
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.title.default,
-    short_name: 'QC Auth',
+    short_name: 'QC',
     description: siteConfig.description,
     start_url: '/',
     display: 'standalone',

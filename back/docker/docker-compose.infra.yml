@@ -1,5 +1,5 @@
 services:
-  postgres:
+  qucore_<MODULE_NAME>_postgres:
     image: postgres:17-alpine
     container_name: postgres
     restart: always
@@ -12,7 +12,7 @@ services:
     networks:
       - app-network
 
-  redis:
+  qucore_<MODULE_NAME>_redis:
     image: redis:8-alpine
     container_name: redis
     restart: always

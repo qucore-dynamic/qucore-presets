@@ -4,6 +4,7 @@
   --bg: #fcfdff;
   --bl: #f0f1ff;
   --txt: #171219;
+  --o-txt: #32323c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,5 +12,6 @@
     --bg: #171219;
     --bl: #21212b;
     --txt: #fcfdff;
+    --o-txt: #dcdee3;
   }
 }
