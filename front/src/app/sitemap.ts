@@ -1,8 +1,8 @@
 // Modules
-import { MetadataRoute } from "next"
+import { MetadataRoute } from 'next'
 
 // Config
-import { siteConfig } from "@config/metadata"
+import { siteConfig } from '@config/metadata'
 
 /**
  * Sitemap configuration for QuCore Dynamic.
@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: siteConfig.metadataBase.origin,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 1,
     },
   ]
