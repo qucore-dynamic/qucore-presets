@@ -1,5 +1,5 @@
 services:
-  <SERVICE_NAME>:
+  qucore_<MODULE_NAME>_<SERVICE_NAME>:
     build:
       context: .
       dockerfile: services/<SERVICE_NAME>/dockerfile
