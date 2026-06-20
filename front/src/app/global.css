@@ -5,12 +5,13 @@
   --bl: #f0f1ff;
   --txt: #171219;
   --o-txt: #32323c;
+  --spec-txt: #3039a1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #171219;
-    --bl: #21212b;
+    --bl: #242433;
     --txt: #fcfdff;
     --o-txt: #dcdee3;
   }
