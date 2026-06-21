@@ -18,13 +18,13 @@ const prosto = Prosto_One({
 })
 
 const afacad = Afacad({
-  subsets: ['latin', 'cyrillic', 'latin-ext'],
+  subsets: ['latin', 'latin-ext'],
   weight: '400',
   display: 'swap',
 })
 
 const coda = Coda({
-  subsets: ['latin', 'cyrillic', 'latin-ext'],
+  subsets: ['latin', 'latin-ext'],
   weight: '400',
   display: 'swap',
 })
