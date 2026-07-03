@@ -9,7 +9,13 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 
 // Types
+import type { Metadata } from 'next'
 import { LocalesLayoutT } from '@shared-types/layouts'
+
+// Metadata
+import { siteConfig } from '@config/metadata'
+
+export const metadata: Metadata = siteConfig
 
 const prosto = Prosto_One({
   subsets: ['latin', 'cyrillic', 'latin-ext'],
