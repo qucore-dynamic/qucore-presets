@@ -4,7 +4,7 @@ import { siteConfig } from './metadata'
 export const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: siteConfig.title,
+  name: siteConfig.title.default,
   description: siteConfig.description,
   url: siteConfig.metadataBase.toString(),
   logo: {
