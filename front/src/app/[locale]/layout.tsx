@@ -1,5 +1,6 @@
 // Styles
 import '../global.css'
+import '../variables.scss'
 
 // Font
 import { Prosto_One, Afacad, Coda } from 'next/font/google'
@@ -21,18 +22,21 @@ const prosto = Prosto_One({
   subsets: ['latin', 'cyrillic', 'latin-ext'],
   weight: '400',
   display: 'swap',
+  variable: '--font-prosto',
 })
 
 const afacad = Afacad({
   subsets: ['latin', 'latin-ext'],
   weight: '400',
   display: 'swap',
+  variable: '--font-afacad',
 })
 
 const coda = Coda({
   subsets: ['latin', 'latin-ext'],
   weight: '400',
   display: 'swap',
+  variable: '--font-coda',
 })
 
 const RootLayout = async ({ children, params }: LocalesLayoutT) => {
