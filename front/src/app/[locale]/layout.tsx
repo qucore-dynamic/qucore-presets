@@ -48,7 +48,9 @@ const RootLayout = async ({ children, params }: LocalesLayoutT) => {
 
   return (
     <html lang={locale}>
-      <body className={`${prosto.className} ${afacad.className} ${coda.className}`}>
+      <body
+        className={`${prosto.className} ${afacad.className} ${coda.className} ${prosto.variable} ${afacad.variable} ${coda.variable}`}
+      >
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
