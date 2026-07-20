@@ -10,9 +10,9 @@
   "scripts": {
     "dev": "nodemon",
     "build": "tsc -p tsconfig.json && tsc-alias",
-    "start": "node dist/services/auth/src/server.js",
+    "start": "node dist/services/<SERVICE_NAME>/src/server.js",
     "test": "jest --verbose --passWithNoTests ./tests",
-    "go": "npm run build && npm run start"
+    "go": "npm run build && npm start"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",

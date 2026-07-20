@@ -13,7 +13,7 @@
     "build": "next build",
     "start": "next start --port 3000",
     "test": "jest --verbose --passWithNoTests",
-    "go": "next build && next start",
+    "go": "npm run build && npm start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write ."
