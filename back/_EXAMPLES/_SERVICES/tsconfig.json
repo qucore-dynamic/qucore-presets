@@ -19,7 +19,6 @@
       "@controllers/*": ["./src/controllers/*"],
       "@mails/*": ["./src/mails/*"],
       "@middlewares/*": ["./src/middlewares/*"],
-      "@models/*": ["./src/models/*"],
       "@routes/*": ["./src/routes/*"],
       "@helpers/*": ["./src/helpers/*"],
       "@services/*": ["./src/services/*"],
