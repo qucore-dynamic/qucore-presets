@@ -16,6 +16,7 @@
     "allowSyntheticDefaultImports": true,
     "typeRoots": ["./node_modules/@types", "../../node_modules/@types"],
     "paths": {
+      "@configs/*": ["./src/configs/*"],
       "@controllers/*": ["./src/controllers/*"],
       "@mails/*": ["./src/mails/*"],
       "@middlewares/*": ["./src/middlewares/*"],

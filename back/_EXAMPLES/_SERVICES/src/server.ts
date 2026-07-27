@@ -1,5 +1,5 @@
 // Configs
-import { __PORT, CORS_OPTIONS, HELMET_OPTIONS } from './config'
+import { __PORT, CORS_OPTIONS, HELMET_OPTIONS } from '@configs/config'
 
 // Modules
 import express, { NextFunction, Request, Response } from 'express'

@@ -1,12 +1,12 @@
 // Configs
-import { PrismaClient } from '../prisma/generated/client'
+import { PrismaClient } from '../../prisma/generated/client'
 
 // Modules
 import { PrismaPg } from '@prisma/adapter-pg'
 import path from 'path'
 import dotenv from 'dotenv'
 
-dotenv.config({ path: path.resolve(process.cwd(), '../../.env') })
+dotenv.config({ path: path.resolve(process.cwd(), '../../../.env') })
 
 const isProd = process.env.MODE === 'prod'
 
