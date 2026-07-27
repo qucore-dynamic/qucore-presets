@@ -5,7 +5,6 @@ services:
       dockerfile: services/<SERVICE_NAME>/dockerfile
     volumes:
       - ./services/<SERVICE_NAME>:/app/services/<SERVICE_NAME>
-      - ./packages/qucore-common:/app/packages/qucore-common
       - /app/node_modules
       - /app/dist
     command: npm run dev -w services/<SERVICE_NAME> # Use dev for hot-reloading during development

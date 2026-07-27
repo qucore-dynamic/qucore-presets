@@ -3,13 +3,9 @@ FROM node:22-alpine
 WORKDIR /app
 
 COPY package*.json ./
-COPY packages/qucore-common/package*.json ./packages/qucore-common/
 COPY services/<SERVICE_NAME>/package*.json ./services/<SERVICE_NAME>/
 
 RUN npm ci
-
-COPY packages/qucore-common ./packages/qucore-common
-RUN npm run build --workspace=@qucore/common
 
 COPY services/<SERVICE_NAME> ./services/<SERVICE_NAME>
 
