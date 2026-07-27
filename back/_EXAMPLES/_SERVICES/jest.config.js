@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'auth-service',
+  displayName: 'qucore-<SERVICE_NAME>',
   preset: 'ts-jest',
   testEnvironment: 'node',
   testMatch: ['<rootDir>/tests/**/*.test.ts'],
